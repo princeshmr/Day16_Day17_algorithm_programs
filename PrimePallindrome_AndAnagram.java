@@ -8,20 +8,20 @@ public class PrimePallindrome_AndAnagram {
 	static ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
     public void primeNumber() {
-        int i , j , flag;
+        int i , j , count;
 
         for(i=0;i<=1000;i++) {
             if(i==0 || i==1)
                 continue;
-            flag = 1;
+            count = 1;
 
             for(j=2;j<=i/2;++j) {
                 if(i%j == 0) {
-                    flag = 0;
+                    count = 0;
                     break;
                 }
             }
-            if(flag == 1)
+            if(count == 1)
                 arrayList.add(i);
         }
     }
