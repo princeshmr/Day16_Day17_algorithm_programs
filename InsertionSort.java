@@ -15,8 +15,8 @@ public class InsertionSort {
         return array;
     }
 
-    public void displaySort(Integer[] array) {
-        for (Integer j : array) {
+    public void displaySort(String[] array) {
+        for (String j : array) {
             System.out.print(" "+j);
         }
         System.out.println();
@@ -24,8 +24,8 @@ public class InsertionSort {
 	public static void main(String[] args) {
 		InsertionSort sort = new InsertionSort();
 
-        Integer array[] = {40,30,10,70,50,20,60};
-        Integer [] sortedArray = sort.insertionSort(array);
+        String array[] = {"hii","bye","good","bad","my"};
+        String [] sortedArray = sort.insertionSort(array);
         sort.displaySort(sortedArray);
 
 	}
